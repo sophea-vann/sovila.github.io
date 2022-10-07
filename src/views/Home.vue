@@ -32,7 +32,7 @@
           <!-- <h1 class="white--text">Web Developer</h1> -->
           <h1 class="white--text" id="name">Kuon Sovila</h1>
           <h3 class="white--text">
-            I'm a Back-end Developer, Creative and a problem solver.<br />
+            I'm a Creative Problem Solver and Back-end Developer.<br />
           </h3>
           <br />
           <v-btn tile color="#A7121D" dark> Github </v-btn>
@@ -103,6 +103,43 @@
         </v-col> -->
         <div class="skill">
           <p class="skill-header">My Skill</p>
+          <v-card color="rgba(40,44,52,.95)" dark>
+            <!-- back-end -->
+            <v-card-title class="ma-5 mt-6 pt-3 skill-title"
+              >Back-end Development</v-card-title
+            >
+            <v-card-subtitle class="skill-subtitle ml-5 mb-3">
+              &nbsp; Nest.js &nbsp;. Javascript &nbsp;. Java &nbsp;. Mysql .
+              &nbsp; Typescript . &nbsp; Git
+            </v-card-subtitle>
+            <v-divider></v-divider>
+
+            <!-- front-end -->
+            <v-card-title class="ma-5 skill-title"
+              >Front-end Development</v-card-title
+            >
+            <v-card-subtitle class="skill-subtitle ml-5 mb-3">
+              &nbsp; HTML5 &nbsp;. CSS &nbsp;. JS ES6 &nbsp;. VUE.JS
+            </v-card-subtitle>
+            <v-divider></v-divider>
+
+            <!-- security -->
+            <v-card-title class="ma-5 skill-title">Security</v-card-title>
+            <v-card-subtitle class="skill-subtitle ml-5 mb-3">
+              &nbsp; Bcrypt &nbsp;. Json web token
+            </v-card-subtitle>
+            <v-divider></v-divider>
+
+            <!-- development environment -->
+            <v-card-title class="ma-5 skill-title"
+              >Development Environment</v-card-title
+            >
+            <v-card-subtitle class="skill-subtitle ml-5 mb-3">
+              &nbsp; APIs &nbsp;. Git . &nbsp; npm . &nbsp; ESlint . &nbsp;
+              Prettier . &nbsp; Heroku . &nbsp; ENV . &nbsp;Command Line
+            </v-card-subtitle>
+            <v-divider></v-divider>
+          </v-card>
         </div>
       </div>
 
@@ -241,7 +278,13 @@ export default {
   padding: 0;
   margin: 0;
 }
-
+.skill-subtitle {
+  /* margin-top: 1%; */
+  font-size: 2.5vh;
+}
+.skill-title {
+  color: rgb(238, 182, 144);
+}
 /* @font-face {
   font-family: myFirstFont;
   src: url(sansation_light.woff);
