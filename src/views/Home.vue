@@ -177,129 +177,16 @@
           </v-card>
         </div>
       </div>
-
-      <!-- <v-col md="3">
-          <v-card
-            class="pa-2 py-12"
-            outlined
-            tile
-            height="250px"
-            color="#1E1E1E"
-          >
-            <v-img src="2.png" contain max-height=""></v-img>
-          </v-card>
-        </v-col>
-        <v-col md="3" offset-md="3">
-          <v-btn color="white" dark text class="ml-n4"> The Vintage </v-btn
-          ><br />
-
-          <v-btn color="#A7121D" dark text class="ml-n4">
-            know more
-            <v-icon right>mdi-arrow-right</v-icon>
-          </v-btn>
-        </v-col>
-        <v-col md="3">
-          <v-btn color="white" dark text class="ml-n4"> Foodasa </v-btn><br />
-
-          <v-btn color="#A7121D" dark text class="ml-n4">
-            know more
-            <v-icon right>mdi-arrow-right</v-icon>
-          </v-btn>
-        </v-col>
-        <v-col md="3" offset-md="3">
-          <v-card
-            class="pa-2 py-12"
-            outlined
-            tile
-            height="250px"
-            color="#1E1E1E"
-          >
-            <v-img src="4.png" contain max-height=""></v-img>
-          </v-card>
-        </v-col>
-        <v-col md="3">
-          <v-card
-            class="pa-2 py-12"
-            outlined
-            tile
-            height="250px"
-            color="#1E1E1E"
-          >
-            <v-img src="5.png" contain max-height=""></v-img>
-          </v-card>
-        </v-col>
-        <v-col md="3" offset-md="3">
-          <v-btn color="white" dark text class="ml-n4"> AAE IdeaPro </v-btn
-          ><br />
-
-          <v-btn color="#A7121D" dark text class="ml-n4">
-            know more
-            <v-icon right>mdi-arrow-right</v-icon>
-          </v-btn>
-        </v-col>
-        <v-col md="3">
-          <v-btn color="white" dark text class="ml-n4"> Mozaik </v-btn><br />
-          <v-btn color="#A7121D" dark text class="ml-n4">
-            know more
-            <v-icon right>mdi-arrow-right</v-icon>
-          </v-btn>
-        </v-col>
-        <v-col cols="12" class="padd topInverse">
-          <div class="second">
-            <div class="secondchild1" id="contact">
-              <v-row>
-                <v-col cols="7">
-                  <h1 class="white--text">
-                    Let's work together on<br />your next project
-                  </h1>
-                  <p class="grey--text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Eius nesciunt ducimus natus <br />
-                  </p>
-                </v-col>
-                <v-col cols="5">
-                  <v-btn tile color="#A7121D" dark class="mt-16">
-                    Contact
-                  </v-btn>
-                </v-col>
-              </v-row>
-            </div>
-          </div>
-          <v-toolbar class="topTolbar" color="#111111" dark flat>
-            <div
-              style="
-                position: absolute;
-                margin-left: auto;
-                margin-right: auto;
-                left: 0;
-                right: 0;
-                text-align: center;
-              "
-            >
-              <v-btn text>Home</v-btn>
-              <v-btn text>Project</v-btn>
-              <v-btn text>about</v-btn>
-              <v-btn text> contact</v-btn>
-            </div>
-          </v-toolbar>
-        </v-col> -->
     </v-container>
-    <!-- <Footer /> -->
   </v-app>
 </template>
 
 <script>
-// import Footer from "../components/Footer.vue";
-
 export default {
   name: "Home",
   data: () => ({
     icons: ["mdi-facebook", "mdi-twitter", "mdi-linkedin", "mdi-instagram"],
   }),
-  components: {
-    // NavBar,
-    // Footer,
-  },
   methods: {
     scroll(refName) {
       const element = document.getElementById(refName);
@@ -314,7 +201,6 @@ export default {
   margin: 0;
 }
 .skill-subtitle {
-  /* margin-top: 1%; */
   font-size: 2.5vh;
 }
 .skill-title {
