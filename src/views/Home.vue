@@ -12,33 +12,26 @@
           <v-btn text @click="scroll('myskill')" class="white--text"
             >Myskills</v-btn
           >
-          <v-btn text @click="scroll('about me')" class="white--text">
+          <v-btn text @click="scroll('aboutme')" class="white--text">
             About Me</v-btn
           >
         </div>
-        <!-- <v-col cols="6">
-          <v-img
-            src="https://i.pinimg.com/564x/1a/ca/0c/1aca0cacf8af0007ce13bea577e0ae5f.jpg"
-            contain
-            max-height="400"
-          ></v-img>
-          <div class="hero-image"></div>
-        </v-col> -->
-        <!-- <v-row>
-          <v-col cols="6"></v-col>
-        </v-row> -->
         <v-col cols="8" class="desc">
           <h3 class="white--text text--darken-1">Hello, My name is</h3>
-          <!-- <h1 class="white--text">Web Developer</h1> -->
           <h1 class="white--text" id="name">Kuon Sovila</h1>
           <h3 class="white--text">
             I'm a Creative Problem Solver and Back-end Developer.<br />
           </h3>
           <br />
-          <v-btn tile color="#A7121D" dark> Github </v-btn>
-          <!-- <v-row class="link-info">
-            <v-btn tile color="#A7121D" dark> about me </v-btn>
-          </v-row> -->
+          <v-btn
+            tile
+            color="#A7121D"
+            dark
+            href="https://github.com/kuonsovila"
+            target="_blank"
+          >
+            Github
+          </v-btn>
         </v-col>
       </div>
       <div class="project-image">
@@ -79,10 +72,6 @@
                     >This app allow user to Insert Update Read and Delete. I've
                     use Json-server to store data.
                   </v-card-subtitle>
-
-                  <!-- <v-card-actions>
-                    <v-btn text> Listen Now </v-btn>
-                  </v-card-actions> -->
                 </v-col>
                 <v-col cols="4">
                   <v-row class="btn-crud">
@@ -97,10 +86,6 @@
         </div>
       </div>
       <div id="myskill" class="skill-image">
-        <!-- <v-col md="3" offset-md="3" id="myskill">
-          <h4 class="white--text">FEATURED PROJECTS</h4>
-          <p class="grey--text">Lorem ipsum dolor Lorem ipsum dolor</p>
-        </v-col> -->
         <div class="skill">
           <p class="skill-header">My Skill</p>
           <v-card color="rgba(40,44,52,.95)" dark>
@@ -139,6 +124,56 @@
               Prettier . &nbsp; Heroku . &nbsp; ENV . &nbsp;Command Line
             </v-card-subtitle>
             <v-divider></v-divider>
+          </v-card>
+        </div>
+      </div>
+      <div id="aboutme" class="about-image">
+        <div class="aboutme">
+          <p class="about-title">
+            ABOUT ME &nbsp; <span>Here's Why I Build</span>
+          </p>
+
+          <!-- technology -->
+          <v-card color="rgba(40,44,52,.95)" dark>
+            <v-card-title class="ma-5 mt-6 pt-3 skill-title"
+              >Technology</v-card-title
+            >
+            <v-card-subtitle class="about-subtitle ml-5 mb-3">
+              The improvements in technology over the last 15 years have been
+              huge. We interact with technology on a daily basis and the tech
+              industry now has one of the most significant impacts on the world.
+              The industry is constantly changing and
+              <span>
+                I believe that change is good, and that learning should never
+                stop.
+              </span>
+              &nbsp; I love learning new things on a daily basis as a Developer
+              and being at the forefront of this phenomenal industry. Over the
+              last several years things have begun moving incredibly fast and
+              web development is becoming even more important as Web Apps
+              replace traditional software.
+            </v-card-subtitle>
+          </v-card>
+
+          <!-- little first -->
+          <v-card color="rgba(40,44,52,.95)" dark>
+            <v-card-title class="ma-5 mt-6 pt-3 skill-title"
+              >Little First</v-card-title
+            >
+            <v-card-subtitle class="about-subtitle ml-5 mb-3">
+              Everythings is start from little thing. Then the bunch of little
+              things are going to do The Great Thing.
+              <span> I know that, little things make all the difference. </span>
+            </v-card-subtitle>
+          </v-card>
+
+          <!-- contact -->
+          <v-card color="rgba(40,44,52,.95)" dark>
+            <p class="ma-5 mt-6 pt-3 contact-title">Contact Me</p>
+            <v-card-subtitle class="contact-subtitle ml-5 mb-3">
+              Email: kuonsovila@gmail.com <br />
+              Phone: (+855) 93 759 695
+            </v-card-subtitle>
           </v-card>
         </div>
       </div>
@@ -285,13 +320,41 @@ export default {
 .skill-title {
   color: rgb(238, 182, 144);
 }
-/* @font-face {
-  font-family: myFirstFont;
-  src: url(sansation_light.woff);
-} */
+.about-subtitle {
+  font-size: 2.2vh;
+  color: white;
+  padding-bottom: 20px;
+}
+.about-subtitle span {
+  background-color: aqua;
+  color: black;
+  border-radius: 5px;
+  padding: 1px;
+}
+.contact-title {
+  text-align: center;
+  font-size: 3vh;
+  color: rgb(238, 182, 144);
+}
+.contact-subtitle {
+  text-align: center;
+  padding-bottom: 10px;
+}
 .skill {
   width: 60%;
   margin: auto;
+}
+.aboutme {
+  width: 60%;
+  margin: auto;
+  padding-top: 5%;
+}
+.about-title {
+  font-size: 5vh;
+  color: white;
+}
+.about-title span {
+  font-size: 3vh;
 }
 #crud-pic {
   width: 250px;
@@ -356,6 +419,14 @@ export default {
   background-image: url("../assets/kevin-canlas-ia7-T2bjDb4-unsplash.jpg");
   height: 800px;
   background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.about-image {
+  background-image: url("../assets/mohammad-rahmani-1bNQVGzuy0U-unsplash.jpg");
+  height: 800px;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
